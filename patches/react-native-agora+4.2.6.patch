@@ -1,0 +1,42 @@
+diff --git a/node_modules/react-native-agora/src/specs/AgoraRtcSurfaceViewNativeComponent.tsx b/node_modules/react-native-agora/src/specs/AgoraRtcSurfaceViewNativeComponent.tsx
+deleted file mode 100644
+index 04f462c..0000000
+--- a/node_modules/react-native-agora/src/specs/AgoraRtcSurfaceViewNativeComponent.tsx
++++ /dev/null
+@@ -1,16 +0,0 @@
+-import type { HostComponent, ViewProps } from 'react-native';
+-import codegenNativeComponent from 'react-native/Libraries/Utilities/codegenNativeComponent';
+-
+-export interface NativeProps extends ViewProps {
+-  callApi: {
+-    funcName: string;
+-    params: string;
+-    buffers?: string[];
+-  };
+-  zOrderOnTop?: boolean;
+-  zOrderMediaOverlay?: boolean;
+-}
+-
+-export default codegenNativeComponent<NativeProps>(
+-  'AgoraRtcSurfaceView'
+-) as HostComponent<NativeProps>;
+diff --git a/node_modules/react-native-agora/src/specs/AgoraRtcTextureViewNativeComponent.tsx b/node_modules/react-native-agora/src/specs/AgoraRtcTextureViewNativeComponent.tsx
+deleted file mode 100644
+index b1e3eb3..0000000
+--- a/node_modules/react-native-agora/src/specs/AgoraRtcTextureViewNativeComponent.tsx
++++ /dev/null
+@@ -1,14 +0,0 @@
+-import type { HostComponent, ViewProps } from 'react-native';
+-import codegenNativeComponent from 'react-native/Libraries/Utilities/codegenNativeComponent';
+-
+-export interface NativeProps extends ViewProps {
+-  callApi: {
+-    funcName: string;
+-    params: string;
+-    buffers?: string[];
+-  };
+-}
+-
+-export default codegenNativeComponent<NativeProps>(
+-  'AgoraRtcTextureView'
+-) as HostComponent<NativeProps>;
