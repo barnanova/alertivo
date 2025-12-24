@@ -2,6 +2,34 @@
   "expo": {
     "name": "alertivo",
     "slug": "alertivo",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "permissions": [
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_COARSE_LOCATION",
+      "ACCESS_BACKGROUND_LOCATION"
+    ],
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Alertivo needs your location to find nearby responders and ensure accurate emergency response.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Alertivo requires access to your location even in the background to keep responders updated during emergencies.",
+        "NSLocationAlwaysUsageDescription": "Alertivo needs continuous location access to provide real-time safety and quick emergency response.",
+        "NSMicrophoneUsageDescription": "Alertivo needs microphone access to let you speak with clinic staff during emergencies."
+      }
+    },
+    "android": {
+      "package": "com.anonymous.alertivo",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "RECORD_AUDIO",
+        "MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2a5c33a5-02b8-4f44-a93e-3e8708099abe"
+      }
+    }
   }
 }

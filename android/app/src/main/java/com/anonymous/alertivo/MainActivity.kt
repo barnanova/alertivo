@@ -1,4 +1,4 @@
-package com.alertivo
+package com.anonymous.alertivo
 
 import android.os.Build
 import android.os.Bundle
